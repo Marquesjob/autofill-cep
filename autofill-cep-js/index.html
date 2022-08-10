@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>CEP Autofill</title>
+</head>
+
+<body>
+
+    <div class="container w-50 mt-5 pt-5">
+        <form>
+            <h1>CEP Autofill</h1>
+            <p>Fazendo consultas a API <a href="https://viacep.com.br/">Viacep</a> para auto-preencher inputs de um formulário de endereço</p>
+            <div class="form-group mb-4">
+                <label class="mb-2" for="cep"><strong>CEP</strong></label>
+                <input type="text" maxlength="9" class="form-control" id="cep">
+                <small>0000-000</small>
+            </div>
+            <div class="form-group mb-4">
+                <label class="mb-2" for="logradouro"><strong>Logradouro</strong></label>
+                <input type="text" class="form-control" id="logradouro">
+                <small>Rua.</small>
+            </div>
+            <div class="form-group mb-4">
+                <label class="mb-2" for="bairro"><strong>Bairro</strong></label>
+                <input type="text" class="form-control" id="bairro">
+                <small>Bairro</small>
+            </div>
+            <div class="form-group mb-4">
+                <label class="mb-2" for="localidade"><strong>Localidade</strong></label>
+                <input type="text" class="form-control" id="localidade">
+                <small>Cidade</small>
+            </div>
+            <div class="form-group mb-4">
+                <label class="mb-2" for="uf"><strong>UF</strong></label>
+                <input type="text" class="form-control" id="uf">
+                <small>Estado</small>
+            </div>
+        </form>
+    </div>
+
+    <script src="src/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
